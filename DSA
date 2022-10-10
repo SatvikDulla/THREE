@@ -1,16 +1,7 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {   // Take two linked lists and add numbers present in them and finally add it into new linked list
         ListNode* head=NULL;
         ListNode* curr=head;
         int c=0;
@@ -33,7 +24,7 @@ public:
             }
         }
         ListNode* tp=(l1!=NULL)? l1:l2;
-        while(tp)
+        while(tp)  // Traversing the linkedlist
         {
             
             
@@ -70,3 +61,13 @@ public:
         return head;
     }
 };
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
